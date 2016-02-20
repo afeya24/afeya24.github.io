@@ -1,0 +1,76 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background: #010101;
+}
+.container-boss {
+	width: 831px;
+	height: 803px;
+	background: url(../img/background.jpg) no-repeat;
+	margin: 0 auto;
+	padding: 50px 66px 30px 66px;
+}
+header {
+	position: relative;
+}
+.contacts {
+	float: right;
+	position: absolute;
+	bottom: 19px;
+	right:0;
+}
+.contacts p {
+	font: 8.5px/1.3 Tahoma Regular;
+	color: #e6e6e6;
+	text-shadow: 0px 0px 1px #5a5a5a;
+}
+.container-block {
+	margin-bottom: 50px;
+}
+.block {
+	display: block;
+	float: left;
+	width: 260px;
+	position: relative;
+	margin: -7px 3.5px 62px 3.5px;
+	padding: 185px 5px 0 5px;
+	font: 15.3px/1.1 Tahoma Regular;
+	color: #e6e6e6;
+	text-shadow: 0px 0px 1px #5a5a5a;
+	text-align: center;
+}
+.block:hover {
+	text-decoration: underline;
+}
+.block img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;		
+}
+.block span {
+	display: block;
+	width: 270px; 
+	height: 188px;
+	background: url(../img/ramka.png) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.container-block {
+	height: 500px;
+	margin-bottom: 140px;
+}
+.copy{
+	text-align: center;
+	font: 10.2px/1.1 Tahoma Regular;
+	color: #e6e6e6;
+	text-shadow: 0px 0px 1px #5a5a5a;
+}
