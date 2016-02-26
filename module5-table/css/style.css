@@ -1,0 +1,50 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #e1f7b4;
+}
+table {
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+th, td {
+	border: 10px solid #2a2023;
+}
+.th1 {
+	width: 80px;
+}
+.th2 {
+	width: 78px;
+}
+.th3 {
+	width: 47px;
+}
+.tr1 {
+	height: 40px;
+}
+.tr2 {
+	height: 100px;
+}
+.tr3 {
+	height: 50px;
+}
+.tr4 {
+	height: 30px;
+}
+.yell {
+	background: #fff360;
+}
+.red {
+	background: #ff5c35;
+}
+.black {
+	background: #2a2023;
+}
+.blue {
+	background: #0e4c8d;
+}
+.wh{
+	background: #fff;
+}
