@@ -34,7 +34,7 @@ body {
    6px 0 9px -3px rgba(0, 0, 0, .5),
    0 0 0px rgba(0, 0, 0, .1) inset;
 }
-footer {
+header {
 	width: 934px;
 	height: 175px;
 	background: #fff;
@@ -49,7 +49,7 @@ footer {
 .contacts {
 	margin-top: 8px;
 	float: right;
-	font: 12px/1.5 Tahoma Regular;
+	font: 12px/1.5 "Tahoma Regular";
 	color: #128aa7;
 	text-shadow: 0 -1px 1px #b5d2dc;
 }
@@ -73,7 +73,7 @@ footer {
 	margin: 0 17px 0 0;
 	background: url(../img/sprite.png) no-repeat;
 	text-align: center;
-	font: 10px/1.1 Tahoma Regular;
+	font: 10px/1.1 "Tahoma Regular";
 	color: #128aa7;
 	text-shadow: 0 -1px 1px #b5d2dc;
 	text-decoration: underline;
@@ -142,7 +142,7 @@ footer {
 }
 .menu ul li a {
 	display: block;
-	font: 14px/1 Tahoma Regular;
+	font: 14px/1 "Tahoma Regular";
     color: #fff;
 	text-shadow: 0 -1px 1px #a7a7a7;
 }
@@ -221,17 +221,17 @@ article h3{
 	text-align: center;
 }
 article h3 a{
-	font: bold 18px/1.5 Tahoma Regular;
+	font: bold 18px/1.5 "Tahoma Regular";
 	color: #424c43;
 }
 article p {
-	font: 14px/1.5 Tahoma Regular;
+	font: 14px/1.5 "Tahoma Regular";
 	color: #424c43;
 }
 /* копирайт */
-.copy {
+footer{
 	text-align: center;
-	font: 12px/2.5 Tahoma Regular;
+	font: 12px/2.5 "Tahoma Regular";
 	color: #fff;
 	text-shadow: 0 -1px 1px #a7a7a7;
 }
