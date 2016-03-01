@@ -115,7 +115,7 @@ body {
 	height: auto;
 	z-index: 100;	
 }
-.zagolovok, form {
+.zagolovok, .container-form {
 	width: 560px;
 	height: auto;
 	margin: 2px auto;
@@ -127,7 +127,7 @@ body {
 	text-align: center;
 	color: #fff;
 }
-.container-form {
+.container-submit1, form {
 	width: 276px;
 	margin: 0 auto;
 	padding-bottom: 15px;
@@ -138,6 +138,7 @@ body {
 	background: url(../img/fb.png) no-repeat;
 	border: 0;
 	margin-top: 36px;
+	cursor: pointer;
 }
 .line {
 	margin: 25px 0;
@@ -206,6 +207,7 @@ body {
 	box-shadow: 0px 0px 1px 1px #63a7e1;
 	font: 14px/1.5 'Helvetica Neue';
 	color: #fff;
+	cursor: pointer;
 }
 .agree {
 	margin: 0 -20px;
