@@ -1,0 +1,200 @@
+*,body, html {margin:0; padding:0; outline: none}
+body {background: #1f1f1f}
+/* HEADER */
+header {width: 1188px; height: 343px; margin: 0 auto; position: relative}
+.bg {position:absolute; bottom:0}
+.container-top {width: 100%; height: 27px; background: #020202; border-bottom: 1px solid #383d43; position:absolute; top:0; box-shadow:0px 1px 7px #1b1b1b}
+.container-menu {width: 988px; height: 68px; background-image: linear-gradient(180deg,#3f3f3f,#505050); box-shadow:0px 0px 7px #1b1b1b; border: 1px solid #212121; border-top:none; border-radius: 0px 0px 6px 6px; margin:0 auto}
+.container-logo {width: auto; height: 67px; background-image: linear-gradient(180deg,#2a2a2a 0%,#313131 79%, #212121 80%); margin: 0px 0px 0px 1px; float: left}
+.logo{width:auto; height: auto; margin: 8px 0px 0px 25px; display: inline-block; vertical-align: top;}
+.menu-top {width: 777px; height: 67px; display: inline-block; background: #212121; border-radius: 0px 0px 6px 0px;}
+.menu-top ul {list-style: none;}
+.menu-top ul li {float: left; height: 41px; display: block; cursor: pointer; padding: 27px 22px 0px 22px;}
+.menu-top ul li:first-child {padding-left: 37px;}
+.menu-top ul li:last-child {padding-right: 37px; border-radius: 0px 0px 5px 0px}
+.menu-top ul li a {text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; letter-spacing: .1px; font-size: 12px; color:#ffffff; text-transform: uppercase;}
+.menu-top ul li:hover {border: #000000; border-top:none; background-image: linear-gradient(180deg,#d1770b,#e0ad4f)}
+.decor {position: absolute; bottom: -41px; background: #000000; width: 988px; height: 14px; opacity: .5; border-radius: 0px 0px 6px 6px}
+.abv {width: 884px; height: 42px; border: 1px solid #343535; border-bottom: none; border-radius: 6px 6px 0px 0px; box-shadow:0px -1px 7px #1b1b1b; background-image: linear-gradient(90deg,rgba(0,0,0,.7), rgba(1,1,1,.99)); position: absolute; bottom: 0px; right: 139px}
+.abv ul {list-style: none; display: flex; justify-content: center;}
+.abv ul li {float: left; padding: 12px 9px 0px 8px}
+.abv ul li:first-child {padding-left: 0px}
+.abv ul li:last-child {padding-right: 0px} 
+.abv ul li a{text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; color: #ffffff; font-size: 15px; text-transform: uppercase}
+.border {width: 884px; height: 3px; border-right: 1px solid #494949; border-left: 1px solid #494949; position: absolute; bottom: -3px; right: 139px }
+/* CONTENT */
+/* админ-панель */
+.container-boss {width: 992px; height: auto; background-image: linear-gradient(180deg, #1c1c1c, #020202 50%); margin: 0 auto; padding: 0px 86px 0px 110px}
+.container-admin {width: 988px; height: 48px; border-radius: 5px 5px 0px 0px; background-image: linear-gradient(180deg, #585858 -8%, #0a0a0a 46%, #0a0a0a 54%, #555555 100%); margin-top: 3px; position: relative}
+.admin {width: 975px; height: 43px; border-radius: 5px 5px 0px 0px; background-image: linear-gradient(180deg, #5b5b5b 0%, #1f1f1f 49%, #1f1f1f 72%, #292929 93%); position: absolute; bottom: -1px; right: 7px}
+.logo2 {width: 71px; float: left; padding: 15px 0px 0px 71px;}
+.search {width: 349px; float: left; padding: 10px 0px; position: relative}
+#search {width: 289px; height:22px; position: absolute; right:0; background-image: linear-gradient(180deg, #202020, #2f2f2f); color: #848484; padding: 0px 0px 0px 16px; text-transform: uppercase; font-family: 'Open Sans Condensed', sans-serif; font-style:italic; border-radius: 7px; font-size:12px; border: 1px solid #5b5b5b}
+#bm {width: 22px; height:20px; background: url(../img/lupa.png) no-repeat bottom; border:0; position: absolute; right:6px; cursor: pointer}
+.admin ul {float: right; list-style: none; margin-right:6px}
+.admin ul li {float: left; padding: 14px 6px;}
+.admin ul li a {display: block; font-family: 'Open Sans Condensed', sans-serif; color: #999999; text-shadow: #1c1c1c 1px 1px 2px; font-size:13.3px; text-transform: uppercase; text-decoration: none; }
+.admin ul li:hover a, .abv ul li:hover a, .container-top-boss ul li:hover a  {color: #dc8c00}
+/* топы */
+.container-top-boss {width: 988px; height: auto; margin-top: 19px;}
+.top1, .top2, .top3 {width: 291px; height: 170px; display: inline-block; vertical-align: top; margin: 0px 1px 0px -1px; padding: 8px 16px 0px 19px}
+.top1, .top2 {background:url(../img/bg-top.png) no-repeat;}
+.top1 {margin: 0px 1px 0px 0px}
+.top2 {margin: 0px 1px 0px 0px}
+.top3 {background:url(../img/bg-top2.png) no-repeat; margin: 0px -1px 0px 0px}
+.container-top-boss h3 a{ vertical-align: top; text-decoration: none; color: #7a7a7a; text-shadow: #3f3f3f 0px 0px 2px; font-weight: normal; font-family: 'Open Sans Condensed', sans-serif; font-size:13.5px; text-transform: uppercase}
+.top3 h3{margin-top: 2px}
+.container-top-boss img {margin-right: 6px}
+.container-top-boss ul {list-style-image: url(../img/before.png); margin: 17px 15px 17px 38px }
+.container-top-boss ul li a{text-decoration: none; font-family: Arial; color: #ffffff; font-size: 11px;}
+.container-top-boss h3:hover a {text-decoration: underline}
+/* контент столбец1 */
+.container-colomn {width: 978px; height: auto; background: #1f1f1f; margin-top: 17px; padding: 11px 5px 50px 5px}
+.colomn1 {width: 209px; height: auto; display: inline-block; vertical-align: top;}
+.nav1,.nav2, .nav3 {width: 100%; height: auto; background: #1a1a1a; margin-bottom: 7px; }
+.colomn1 h3{width: 100%; height: 35px;  padding: 9px 40px 0px 18px }
+.nav1 h3 {background: url(../img/col11.png) no-repeat}
+.nav2 h3 {background: url(../img/col12.png) no-repeat}
+.nav3 h3{background: url(../img/col13.png) no-repeat}
+.colomn1 h3 a, .nav3 h3{text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; color: #000000; font-size:18px; font-weight: bold; text-transform: uppercase; text-shadow: #b47228 1px 1px 1px}
+.colomn1 ul {list-style: none; padding: 0px 5px 14px 5px}
+.colomn1 ul li {border-bottom:1px dashed #0f0f0f; padding:5px 5px 8px 13px; text-shadow: #171717 0px 0px 1px}
+.colomn1 ul li:before {content:""; width:10px; height:11px; background:url(../img/before.png) no-repeat; display:inline-block; margin-right:6px; vertical-align:middle;}
+.colomn1 ul li a {text-decoration: none; font-family: Arial; color: #ffffff; font-size: 12px; text-shadow: #4c4c4c 0px 0px 1px}
+.colomn1 ul li a:hover {text-decoration: underline}
+.nav3 img {display:block; max-width: 200px; margin: 8px auto; padding-bottom: 10px}
+/* контент столбец2 */
+.colomn2 {width: 552px; height: auto; display: inline-block; vertical-align: top;}
+/* слайдер */
+.slider {width: 552px; height: 258px; position: relative}
+.container-slide {width: 552px; height: 258px; overflow:hidden}
+.line-slider-top {position: absolute; top: 0; width: 552px; height: 17px; background: url(../img/slider/line-top.png)no-repeat}
+.line-slider-bottom {position: absolute; bottom: 0; width: 552px; height: 17px; background: url(../img/slider/line-bottom.png) no-repeat}
+.div-top {display: block; width: 100%; height: 24px; background: rgba(0,0,0,.4); position: absolute; top: 17px; text-align: center; text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; 
+color: #ffffff; font-size: 11px; text-transform: uppercase; font-weight: bold; padding-top: 8px; text-shadow: #96989b 0px 0px 1px}
+.div-top:hover {color: #ef8605}
+.div-bottom {width: 100%; height: 61px; position: absolute; bottom: 17px; background: rgba(0,0,0,.4)}
+.pointer {display: inline-block; vertical-align: top; font-family: Arial; color:#ce7f0e; font-size:70px; text-shadow:#000000 0px 0px 4px; text-decoration: none; line-height:.7em}
+.pointer:hover {color:#FFB851;}
+.div-bottom ul {list-style: none; display: inline-block;}
+.div-bottom ul li {float: left; margin: 6px 16px 0px 0px;}
+.div-bottom ul li a	img{border: 1px solid #795c32;}
+.div-bottom ul li:last-child {margin-right: 0px}
+/* минислайдер */
+.mini-slider {width: 552px; height: 91px; overflow: hidden; position: relative}
+.mini-slider ul {list-style: none; width: 600px;}
+.mini-slider ul  li {float: left}
+.mini-slider ul  li a:hover img {opacity:0.7}
+.game-bm1, .game-bm2 {width: 51px; height: 51px; background: rgba(0,0,0,.4); position: absolute; top: 23px}
+.game-bm1 {left: 3px}
+.game-bm2 {right: 3px}
+.game-bm1 a, .game-bm2 a {display: block; width: 34px; height: 40px; background: url(../img/slider/sprite-game.png)no-repeat; margin: 6px 0px 0px 7px}
+.game-bm1 a {background-position: 0 0}
+.game-bm1 a:hover {background-position: -34px 0px}
+.game-bm2 a {background-position: -102px 0}
+.game-bm2 a:hover {background-position: -68px 0}
+/* хлебные крошки */
+.news-bread-crumps {width: 533px; height: 25px; background: url(../img/bg-news.png) no-repeat; padding-top: 13px; padding-right: 20px; overflow: hidden}
+.conrainer-overflow {width: 533px; height: 25px; overflow: hidden}
+.news-bread-crumps ul {list-style: none; display: block; width: 700px}
+.news-bread-crumps ul li {float: left}
+.news-bread-crumps ul li a {text-decoration: none; font-family: Arial; color: #000000; font-size: 12px; text-shadow:#b6b6b6 0px 0px 4px;}
+.news-bread-crumps ul li:first-child:before {content: ""; display: inline-block; vertical-align: middle; width: 14px; height: 14px; background: url(../img/before-news.png) no-repeat; margin: 0px 6px 0px 12px}
+.news-bread-crumps ul li:after {content: "\00bb"; margin: 0px 4px}
+.news-bread-crumps ul li:last-child:after {content:""; display: inline-block; vertical-align: middle; width: 250px; height: 15px; background: url(../img/after-line.png) repeat-x; margin-left: 12px}
+.news-bread-crumps ul li a:hover{text-decoration: underline}
+.news {width: 535px; height: 25px; background: #0f0f0f; padding: 2px 10px 0px 8px}
+.news a{text-decoration: none; font-family: Arial; color:#ef8605; text-shadow:0px 0px 1px #92530a; font-size:11px; text-decoration: underline;}
+.news a:hover{text-decoration: underline}
+.href:before {content: "\00bb"; display:inline-block; vertical-align: top; font-family: Arial; color:#ce7f0e; font-size:38px; text-shadow:#4e2909 0px 0px 1px; line-height: 0.4em}
+.container-like {float:right;}
+.heart, .write {display: inline-block; vertical-align: top; width: 22px; height: 18px; background: url(../img/like.png);}
+.heart {background-position: 0px 0px;}
+.write {background-position: 21px 0px;}
+
+/* статья */
+/* над статьей */
+.container-article {width: 528px; height: auto; background: #ffffff; padding: 1px 12px 20px 12px}
+.container-bread-crumps {display: flex; justify-content: space-between;}
+.container-bread-crumps ul {display: inline-block; vertical-align: top; list-style: none}
+.container-bread-crumps ul li {float: left; margin: 0px 2px}
+.container-bread-crumps ul li:nth-child(odd):before {content: ""; display: inline-block; vertical-align: middle; width: 14px; height: 14px; background: url(../img/before-news.png) no-repeat;}
+.ul1 li:last-child:before {content: "\00bb"; margin-right: 3px}
+.container-bread-crumps ul li a {font-family: Arial; color:#000000; font-size:9.5px;text-decoration: none;}
+.container-bread-crumps ul li a:hover {text-decoration: underline}
+.stars {width: 79px; height: 15px; background: url(../img/stars.png) no-repeat; float: right; margin-top:3px; cursor: pointer}
+.line-article {width: 528px; height: 7px; background: url(../img/line-text.png) no-repeat; margin-bottom: 8px}
+/* собственно статья */
+.text {display: inline-block; vertical-align: top; width: 358px; height: auto; margin-left: 3px}
+.text p, .text span  {font-family: Arial; color:#7d7d7d; font-size:10.5px; line-height: 1.6em}
+.text span a{color:#000000; font-weight: bold; text-decoration: none}
+.text span a:hover, .comments a:hover, .pagination ul li a:hover{text-decoration: underline}
+/* под статьей */
+.container-undertext {width: 528px; height: auto;}
+.comments {float: right;}
+.comments:before {content:""; display: inline-block; vertical-align: middle; width: 330px; height: 15px; background: url(../img/after-line.png) repeat-x; margin-right: 14px}
+.comments a, .read-more a {font-family: Arial; color:#000000; font-size:11px; text-decoration: none;} 
+.read-more {float: right; width: 70px; height: 22px; background: url(../img/read-more.png) no-repeat; padding-left:5px; margin: 0px 8px 0px 10px}
+/* пагинация */
+.pagination {width: 100%; display: flex; justify-content: center; margin-top: 38px}
+.pagination ul {display: inline-block; width: auto; background: #121212; box-shadow: 0px 0px 3px; list-style:none; padding: 7px 29px}
+.pagination ul li {display: inline-block; margin-right: 3px;}
+.pagination ul li:last-child {margin-right: 0}
+.pagination ul li a {font-family: Arial; color:#ef8605; text-shadow:#683d10 0px 0px 1px; font-size:13px; text-decoration: none;} 
+.pagination ul li.active a {color: #fff}
+.pag-pointer { text-decoration:none; color:#000; text-shadow: #e7e7e7 0px 0px 4px; font-size:43px; line-height: .8em; margin: 0px 5px}
+.pag-pointer:hover {color:#ef8605;}
+/* баннер заказать */
+.banner-col2 {width: 551px; height: 79px; background: #1e1e1e; border: 1px solid #000;}
+.to-order {width: 33px; height: 73px; background: url(../img/to-order.png) no-repeat; display: inline-block; vertical-align: middle; margin: 1px 12px 0px 4px}
+.container-banner {max-width: 468px; max-height: 60px; display: inline-block; vertical-align: middle}
+.container-banner a img {border: 1px solid #000;}
+.banner-col2:hover .to-order {transform:rotate(270deg); margin:0px 20px 0px 25px;}
+
+/* контент столбец3 */
+.colomn3 {width: 209px; height: auto; display: inline-block; vertical-align: top;}
+/* галерея */
+.gal1, .gal2, .gal3, .gal4  {width: 100%; height: auto; background: #1a1a1a; margin-bottom: 7px;}
+.gal1 {margin-bottom: 48px; padding-bottom: 44px;}
+.gal2 {margin-bottom: 7px; padding-bottom: 20px;}
+.gal3 {margin-bottom: 11px;}
+.colomn3 h3{width: 100%; height: 31px; background: url(../img/col3.png) no-repeat; text-align: center; padding-top: 11px}
+.gal1 h3 a, .gal2 h3 a, .gal3 h3, .gal4 h3 {text-decoration: none; font-family: 'Open Sans Condensed', sans-serif; color: #e58106; font-size:15px; font-weight: bold; text-transform: uppercase; text-shadow: #020202 1px 1px 1px}
+.img {padding: 14px 3px 0px 19px}
+.img a {padding: 0px 11px 6px 0px}
+.img a img {border: #80531c solid 1px}
+.show1 {width: 60px; height: 17px; background-image: linear-gradient(180deg, #f28804 25%, #864918); padding: 0px 9px 4px 9px; float: right; margin: 10px 16px 0px 0px}
+.show1 a {text-decoration: none; font-family: Arial; color: #000000; font-size:11px;}
+/* видео */
+.gal2 ul {list-style: none; padding: 14px 3px 0px 19px}
+.gal2 ul li {float: left; padding: 0px 13px 6px 0px; width: 80px}
+.gal2 ul li a {font-family: Arial; color: #f08704; font-size: 9px; text-decoration: none;}
+.gal2 ul li a:hover {text-decoration: underline}
+.gal2 ul li a img{border: #80531c solid 1px}
+.show {margin-left: 112px; background-image: linear-gradient(180deg, #f28804 25%, #864918); padding: 5px 9px 5px 9px; text-decoration: none; font-family: Arial; color: #000000; font-size:11px;}
+/* баннер */
+.gal3 img {display:block; max-width: 200px; margin: 8px auto;}
+/* опрос */
+.container-interw {width: 183px; height: auto; margin: 8px auto; padding-bottom: 38px}
+.container-interw label {font-family: Arial; font-size: 11px; color: #fb9c0b; text-shadow: #6f4917 0px -1px 1px;}
+.container-radio {width: 100%; height:auto; }
+.container-radio:first-child {margin-top: 2px}
+.container-radio:last-child {margin-bottom: 10px}
+.container-radio input {width: 9px; height: 8px; margin: 0px 7px 0px 3px; display: inline-block; vertical-align: middle}
+.container-radio span {font-family: Arial; font-size: 11px; color: #ffffff; margin-right: 22px; text-shadow: #9e9e9e 0px 0px 1px}
+#bm1 {width: 78px; height: 21px; background-image: linear-gradient(180deg, #ef8605, #8c4d17); border: 1px solid #8e5b1c; padding: 0px 0px 0px 9px; font-family: Arial; font-size: 12px; color: #000000; text-shadow: #b67c45 -1px 1px 1px; cursor: pointer}
+#bm2 {width: 78px; height: 21px; background-image: linear-gradient(180deg, #1f1f1f, #010101); border: 1px solid #333333; padding: 0px 0px 0px 9px; font-family: Arial; font-size: 12px; color: #ffffff; text-shadow: #484848 0px -1px 1px; cursor: pointer}
+/* FOOTER */
+.bottom-line {width: 988px; height: 18px; background: url(../img/bottom-line.png) repeat-x;}
+footer {width: 933px; height: auto; background: #0c0c0c; border: 1px solid #232323; border-top: 1px solid #252525; padding: 13px 17px 10px 36px}
+.logo3 {display: inline-block; vertical-align: top; margin: 20px 28px 0px 0px}
+.vert-line {display: inline-block; width: 1px; height:84px; background-image: linear-gradient(180deg, #0c0c0c 1%, #333333 49%, #333333 51%,  #0c0c0c 99%); border: 1px solid #070707}
+.copyright {display: inline-block; vertical-align: top; width: 420px; height:auto; margin: 10px 8px 0px 16px}
+.copyright p {font-family: Arial; color: #ffffff; font-size: 12px}
+.copyright span {font-family: Arial; color: #bfbfbf; font-size: 11px; margin-left: 1px}
+.designed {display: block; font-family: 'Open Sans Condensed', sans-serif; font-size:15px; font-weight: bold; color: #323232; text-shadow: #2e2e2e 0px -1px 1px; text-align: right; text-transform: uppercase}
+.img-footer {display: inline-block; vertical-align: top; width: 176px; margin: 7px 0px 0px 39px}
+.img-footer img {margin: 0px 0px 1px 2px}
+.up {display: inline-block; vertical-align: top; width: 41px; margin: 18px 0px 0px 24px}
+.up a {font-family: 'Open Sans Condensed', sans-serif; font-size:11px; color: #494949; text-decoration: none; font-weight: bold; margin-left: -7px;}
+

@@ -1,0 +1,217 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+body {
+	background: #e4e5dd;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.container-boss {
+	position: relative;
+	width: 1215px;
+	height: 1028px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container-boss img {
+	position: absolute;
+	left: -382px;
+	top: -12px;
+}
+/* меню */
+.menu {
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 1215px;
+	height: 36px;
+	background: #074c89 url(../img/noise.png) repeat-x;
+}
+.container-menu{
+	float: right;
+}
+.menu ul {
+	float: left;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li:hover {
+	background: #4eabda;	
+}
+.menu ul li:hover a {
+	color: #fff;
+}
+.menu ul li a {
+	padding: 0 13px;
+	font: 14px/2.5 'Helvetica Neue';
+	color: #58aae2;	
+}
+.container-menu>p {
+	height: 35px;
+	float: left;
+	border-left: 1px solid rgba(66,153,210,0);
+	border-bottom: 1px solid rgba(66,153,210,0);
+}
+.ola {
+	padding: 0 12px;
+}
+.container-menu>p>a, .container-menu>p>a>span {
+	font: 14px/2.5 'Helvetica Neue';
+	color: #fff;
+}
+.container-menu>p>a>img {
+	margin: 6px 7px 0 0;
+}
+.container-menu>p>a>span {
+	text-decoration: underline;
+}
+.container-menu>p:hover {
+	background-image: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+	border-left: 1px solid rgba(66,153,210,1);
+	border-bottom: 1px solid rgba(66,153,210,1)
+}
+.container-menu>p:last-child {
+	margin-right: 20px;
+}
+.flag  {
+	position: relative;
+	padding: 0 12px 0 42px;
+}
+.flag:before {
+	content: " ";
+	position: absolute;
+	left: 12px;
+	top: 6px;
+	width: 23px;
+	height: 25px;
+	background: url(../img/flag.png) no-repeat;
+	display: inline-block;
+}
+/* Форма */
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 560px;
+	height: auto;
+	z-index: 100;	
+}
+.zagolovok, .container-form {
+	width: 560px;
+	height: auto;
+	margin: 2px auto;
+	background: rgba(0, 0, 0, .6)
+}
+.zagolovok p {
+	padding: 18px 0;
+	font: 24px/1 'Helvetica Neue';
+	text-align: center;
+	color: #fff;
+}
+.container-submit1, form {
+	width: 276px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+#fb {
+	width: 276px;
+	height: 35px;
+	background: url(../img/fb.png) no-repeat;
+	border: 0;
+	margin-top: 36px;
+	cursor: pointer;
+}
+.line {
+	margin: 25px 0;
+	position: relative;
+	text-align: center;
+	font: 14px/1 'Helvetica Neue';
+	color: #999;
+	text-transform: uppercase;
+}
+.line:before, .line:after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	width: 123px;
+	height: 1px;
+	background: #000;
+	border-top: 1px solid #666;
+	display: inline-block;
+}
+.line:before {
+	left: 0;
+}
+.line:after {
+	right: 0;
+}
+.container-text {
+	margin-bottom: 18px;
+}
+.container-text input {
+	width: 251px;
+	height: 35px;
+	background-image: linear-gradient(to bottom, #101010, #141414);
+	border: 0;
+	border-bottom: 1px solid #494949;
+	padding: 0 7px 0 18px;
+	font: 14px/1.5 'Helvetica Neue';
+	color: #ccc;
+}
+.container-text input:focus {
+	background-image: linear-gradient(to bottom, #1e4b76, #1f5384 30px);
+	border-bottom: 1px solid #689bcc;
+	box-shadow: 0 0 8px 1px #437eaa;
+}
+.container-checkbox input {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #8c8e8c;
+	vertical-align: top;
+}
+.container-checkbox label {
+	font: 14px/1 'Helvetica Neue';
+	color: #ccc;
+	vertical-align: top;
+}
+.container-submit {
+	margin: 15px auto;
+	width: 149px;
+}
+.container-submit input{
+	width: 100%;
+	height:32px;
+	background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
+	border: 0;
+	border-top: 1px solid #67c6e6;
+	box-shadow: 0px 0px 1px 1px #63a7e1;
+	font: 14px/1.5 'Helvetica Neue';
+	color: #fff;
+	cursor: pointer;
+}
+.agree {
+	margin: 0 -20px;
+	font: 11px/1.5 'Helvetica Neue';
+	color: #ccc;
+	text-align: center;
+}

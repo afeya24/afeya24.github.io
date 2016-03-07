@@ -1,0 +1,75 @@
+*, body, html {margin: 0; padding: 0; outline: none}
+body {background-image: linear-gradient(to left,rgba(185,206,195,1) 5%,rgba(189,195,166,1) 20%,rgba(189,195,166,1) 80%,rgba(185,206,195,1) 95%)}
+/* HEADER */
+.bg-top {width: 100%; height: 259px; background:url(../im/bg-top.png) repeat-x;position:absolute;}
+.line-top {width: 100%; height: 22px; background:url(../im/str.png) repeat-x; position:absolute; z-index: 10}
+.container-top {width: 1064px; height: auto; margin:0 auto;}
+header {width: 100%; height: 246px; background:url(../im/header.png) no-repeat; position:relative; z-index:5; box-shadow: 0px -65px 130px rgba(0,0,0,.3) }
+.logo {width:auto; height: auto; display:inline-block; vertical-align:top; margin: 20px 0px 0px 40px}
+.container-soc {width:833px; height: 66px; background:url(../im/strip2.png) no-repeat right; position: absolute; top: 6px; right:52px}
+.container-soc ul {float: right; list-style: none;margin: 14px 41px 0px 0px; position: relative}
+.container-soc ul li{float: left}
+.container-soc ul li a{display:block; width:24px; height:19px; background-image: url(../im/sprite.png); background-repeat:no-repeat}
+#tw {background-position:-22px 0px}
+#rss {background-position:-46px 0px}
+#vv {background-position:-71px 0px}
+.container-soc ul:before {content:"Keep in contact"; color: #d96c33; font-family: 'Sansita One', cursive; font-size: 14px; display:block; position:absolute; left: -188px;; background:url(../im/dotted.png) no-repeat right; padding-right: 80px}
+.container-search {width:348px; height: 53px; background:url(../im/search-bg.png) no-repeat; position: absolute; right: 97px; top: 73px;}
+.container-search:before {content:""; width: 268px; height: 15px; background: url(../im/dotted-2.png) no-repeat; position:absolute; left: -232px; top: 14px}
+.container-search:after {content: ""; width: 15px; height: 15px; background: url(../im/dotted-3.png) no-repeat; position:absolute; right: 1px; top: 14px}
+#search {width:273px; height:auto; border:0px; background: transparent; font-size:20px; margin: 11px 37px}
+#bm {width: 20px; height: 31px; background:url(../im/search-bm.png) no-repeat bottom; cursor: pointer;  border:0; display: block; float:right; margin: -40px 14px 0px 0px}
+.menu {width: auto; height: auto; display: inline-block; margin: 17px 62px 0px 62px;}
+.menu ul {list-style: none;}
+.menu ul li{float: left}
+.menu ul li a {font-family: 'Oswald', sans-serif; color: #4e2400;font-size: 24px; text-decoration: none; text-transform: uppercase; padding-right: 61px}
+.menu ul li:last-child a {padding-right: 0px}
+.menu ul li a:hover {opacity:.8; text-decoration: underline}
+/*CONTENT*/
+.container-content {width: 1012px; height:1218px; margin: 0 auto; background: #98bcb1;margin-top:-15px; position:relative; padding-top: 41px; box-shadow: 0px 0px 130px rgba(0,0,0,.3)}
+.slider {width:902px; height: 298px; background: url(../im/frame.png) no-repeat; margin: 0 auto; padding: 22px; position:relative}
+.container-slide {width: 100%; height: 100%; overflow: hidden;}
+.l-pointer {width:98px; height: 90px; background: url(../im/l-pointer.png) no-repeat; position:absolute; left:-49px; top: 118px; cursor: pointer}
+.r-pointer {width:99px; height: 88px; background: url(../im/r-pointer.png) no-repeat; position:absolute; right:-50px; top: 118px; cursor: pointer}	
+.container-content h2 {font-family: 'Alegreya', serif; font-size:  26px; color: #2d1600; text-align: center; position: relative; display:block; margin-top: 43px}
+.container-content h2:after {content: ""; width: 36px; height: 36px; background: url(../im/star.png) no-repeat; display:inline-block; position: absolute; top: 30px}
+.container {background: url(../im/ribbon.png) no-repeat; width: 981px; height: auto; margin: 0 auto; margin-top: 45px}
+.column1, .column2, .column3 {width: 327px; height:100%; display: inline-block; margin:-2px; vertical-align: center}
+.container h3 {width: 100%; height: 90px;  background-position:0px 0px}
+.container-h3 h3 {font-family: 'Six Caps', sans-serif; font-size: 36px; color:#4e2400; text-align: center; margin-top: 21px; position: relative}
+.container-h3 h3:before, .container-h3 h3:after {content: ""; width: 180px; height: 6px; background: url(../im/red_str.png) repeat-x; display: block; position:absolute; top: 26px}
+.hover {width: 291px; height: 100%; margin: 0 auto; overflow: hidden}
+.column2 .hover, .column3 .hover {margin-left:22px}
+.column1 .container-h3 h3:before {left:-91px;}
+.column1 .container-h3 h3:after {right:-91px;}
+.column2 .container-h3 h3:before {left:-89px;}
+.column2 .container-h3 h3:after {right:-89px;}
+.column3 .container-h3 h3:before {left:-95px;}
+.column3 .container-h3 h3:after {right:-95px;}
+.text {font-family: 'IM Fell DW Pica', serif; font-size: 14px; color: #000000; width: 255px; height: auto; text-align:justify; padding:20px 18px 48px 55px; position: relative}
+.column1 .text:before {content: ""; width:28px; height:26px; background: url(../im/symb1.png); position:absolute; left:20px}
+.column2 .text:before {content: ""; width:17px; height:53px; background: url(../im/symb2.png); position:absolute; left:20px}
+.column3 .text:before {content: ""; width:28px; height:25px; background: url(../im/symb3.png); position:absolute; left:20px}
+.video {width:288px; height:110px; margin-left:17px; position:relative;}
+.play {width:30px; height:30px; background: url(../im/play.png); position: absolute; top:50%; right:50%; margin: -15px; display:none; cursor: pointer;}
+.video:hover .play {display: block}
+.signature{width:240px; height:37px; background: url(../im/signature.png); position: absolute; bottom: -27px; left: 37px;}
+.video:hover .signature {display: none}
+.gallery {width:818px; height:196px; background: url(../im/gallery.png); padding: 60px 0px 0px 166px; margin: 40px auto 0px auto}
+.gallery img {margin-right:30px}
+/* FOOTER*/
+.container-bottom {width: 1066px; height: auto; margin:0 auto;}
+.bg-bottom {width: 100%; height: 294px; background:url(../im/bg-bottom.png) repeat-x;position:absolute;}
+.line-bottom {width: 100%; height: 22px; background:url(../im/str.png) repeat-x; transform: scaleY(-1); margin-top:-22px; z-index: 10; position:absolute}
+.sign2 p {font-family: 'Sansita One', cursive; font-size: 14px; color: #d96c33; text-align: right}
+footer {width: 992px; height: 288px; background:url(../im/footer.png) no-repeat; position:relative; z-index:5; margin-top:-34px; padding: 40px 40px 0px 40px; }
+.logo2 {width:auto; height: auto; display: inline-block; vertical-align:top; margin-top:60px; position: relative}
+.logo2:after{content: ""; width:631px; height:29px; background: url(../im/dotted-footer.png); position:absolute; top: 65px;}
+.menu-footer {width: 505px; height: auto; display:inline-block;  margin-top:60px; margin-left: 60px}
+.menu-footer:after {content: ""; width:46px; height:42px; background: url(../im/QUOTES.png); position:absolute;}
+.menu-footer h3 {margin-top: 40px; font-family: 'Oswald', sans-serif; color: #000000; font-size: 18px; text-transform: uppercase; margin-bottom: 18px }
+.menu-footer ul {list-style: none; display: inline-block; vertical-align:top}
+.menu-footer ul li a {font-family: 'Oswald', sans-serif; color: #2f8271;font-size: 12px; text-decoration: none;}
+.col12 {width: auto; height: auto;float: left; margin-right: 80px}
+.col3 {width: 150px; height: auto; float: left; text-align: justify}
+.col3 p {font-family: 'Oswald', sans-serif; color: #2f8271;font-size: 12px;}
