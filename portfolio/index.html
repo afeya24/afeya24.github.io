@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.2.1.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Ledger&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<title>Алёна Коваленко | Разработка сайтов | Украина</title>
+<title>Алёна Чернявская | Разработка сайтов | Украина</title>
 </head>
 <body>
 <header>
 <nav class="nav-bar">
-	<ul>
-		<li><a href="#about">
+	<ul id="menu">
+		<li><a id="menu_link1" href="#about">
 		<h3>Познакомимся?</h3>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="120px" height="15px" viewBox="-52.5 0 120 15" enable-background="new -52.5 0 120 15" xml:space="preserve">
@@ -35,7 +36,7 @@
 					</svg>
 				<span class="subtitle">Про мое "сегодня"</span>
 		</a></li>
-		<li><a href="#works">
+		<li><a id="menu_link2" href="#works">
 		<h3>Мои работы</h3>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="120px" height="15px" viewBox="-52.5 0 120 15" enable-background="new -52.5 0 120 15" xml:space="preserve">
@@ -46,7 +47,7 @@
 		</svg>
 		<span class="subtitle">Про мое "вчера"</span>
 		</a></li>
-		<li><a href="#contact">
+		<li><a id="menu_link3" href="#contact">
 		<h3>Контактная информация</h3>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 width="120px" height="15px" viewBox="-52.5 0 120 15" enable-background="new -52.5 0 120 15" xml:space="preserve">
@@ -73,7 +74,7 @@
 <div class="content">
 	<section id="about">
 	<h1 class="heading">
-		<span>Алёна Коваленко</span>
+		<span>Алёна Чернявская</span>
 		<span class="subtitle">Разработка сайта | Днепропетровск, Украина</span>
 		<span class="subtitle">Идеально точно в срок</span>
 	</h1>
@@ -97,6 +98,68 @@
 		<nav class="nav-pro">
 		<ul class="projects">
 			<li class="two-thirds project pr1">
+				<a target="_blank" href="pages/Pingbuller/index.html">
+					<div class="info">
+						<div class="background"></div>
+						<div class="description">
+							<h4>Pingbuller</h4>
+							<span class="snippet">
+								С помощью корпоративного сайта клиенты узнаю последние новости о Вашей компании, а также о предстоящих акциях. Корпоративный сайт может быть ярким и лаконичным, как этот сайт рекламного агенства.
+							</span>
+							<span class="link">Просмотр</span>
+						</div>
+					</div>
+					<img src="img/6.jpg" alt="retro">
+				</a>
+			</li>
+			<li class="one-thirds project pr1">
+				<a target="_blank" href="pages/Darkgames/index.html">
+					<div class="info">
+						<div class="background"></div>
+						<div class="description">
+							<h4>Игровой портал</h4>
+							<span class="snippet">
+								Игровые сайты должны быть красочными. 
+								Сложность создания сайта будет зависеть от сложности вашего проекта.
+							</span>
+							<span class="link">Просмотр</span>
+						</div>
+					</div>
+					<img src="img/2.jpg" alt="game">
+				</a>
+			</li>
+			<li class="one-thirds project pr1">
+				<a target="_blank" href="pages/InternetShopZazor/index.html">
+					<div class="info">
+						<div class="background"></div>
+						<div class="description">
+							<h4>Zazor</h4>
+							<span class="snippet">
+							Разрабатываю и поддерживаю интернет-магазины для тех, 
+кому нужны индивидуальные, качественные и стабильные решения.
+							</span>
+							<span class="link">Просмотр</span>
+						</div>
+					</div>
+					<img src="img/3.jpg" alt="zazor">
+				</a>
+			</li>
+			<li class="two-thirds project pr1">
+				<a target="_blank" href="pages/ExampleMainAsian/index.html">
+					<div class="info">
+						<div class="background"></div>
+						<div class="description">
+							<h4>Asian-Holidays</h4>
+							<span class="snippet">
+								Клиенты получат информацию о лучших курортах, туристических достопримечательностей, событий, картах.
+							</span>
+							<span class="link">Просмотр</span>
+						</div>
+					</div>
+					<img src="img/5.jpg" alt="retro">
+				</a>
+			</li>
+			<li class="two-thirds project pr1">
 				<a target="_blank" href="pages/Retro_site/index.html">
 					<div class="info">
 						<div class="background"></div>
@@ -115,38 +178,6 @@
 				</a>
 			</li>
 			<li class="one-thirds project pr1">
-				<a target="_blank" href="pages/Darkgames/index.html">
-					<div class="info">
-						<div class="background"></div>
-						<div class="description one">
-							<h4>Игровой портал</h4>
-							<span class="snippet">
-								Игровые сайты должны быть красочными. 
-								Сложность создания сайта будет зависеть от сложности вашего проекта.
-							</span>
-							<span class="link">Просмотр</span>
-						</div>
-					</div>
-					<img src="img/2.jpg" alt="game">
-				</a>
-			</li>
-			<li class="one-thirds project pr1">
-				<a target="_blank" href="pages/InternetShopZazor/index.html">
-					<div class="info">
-						<div class="background"></div>
-						<div class="description one">
-							<h4>Zazor</h4>
-							<span class="snippet">
-							Разрабатываю и поддерживаю интернет-магазины для тех, 
-кому нужны индивидуальные, качественные и стабильные решения.
-							</span>
-							<span class="link">Просмотр</span>
-						</div>
-					</div>
-					<img src="img/3.jpg" alt="zazor">
-				</a>
-			</li>
-			<li class="one-thirds project pr1">
 				<a target="_blank" href="pages/Landing_page/index.html">
 					<div class="info">
 						<div class="background"></div>
@@ -161,36 +192,6 @@
 					<img src="img/4.jpg" alt="retro">
 				</a>
 			</li>
-			<li class="one-thirds project pr1">
-				<a target="_blank" href="pages/ExampleMainAsian/index.html">
-					<div class="info">
-						<div class="background"></div>
-						<div class="description one">
-							<h4>Asian-Holidays</h4>
-							<span class="snippet">
-								Клиенты получат информацию о лучших курортах, туристических достопримечательностей, событий, картах.
-							</span>
-							<span class="link">Просмотр</span>
-						</div>
-					</div>
-					<img src="img/5.jpg" alt="retro">
-				</a>
-			</li>
-			<li class="hole project pr1">
-				<a target="_blank" href="pages/Pingbuller/index.html">
-					<div class="info">
-						<div class="background"></div>
-						<div class="description one">
-							<h4>Pingbuller</h4>
-							<span class="snippet">
-								С помощью корпоративного сайта клиенты узнаю последние новости о Вашей компании, а также о предстоящих акциях. Корпоративный сайт может быть ярким и лаконичным, как этот сайт рекламного агенства.
-							</span>
-							<span class="link">Просмотр</span>
-						</div>
-					</div>
-					<img src="img/6.jpg" alt="retro">
-				</a>
-			</li>
 		</ul>
 		</nav>
 	</div>
@@ -203,7 +204,7 @@
 		</h1>
 		<div class="container1">
 			<div class="findme">
-				<h4>Алёна Коваленко</h4>
+				<h4>Алёна Чернявская</h4>
 				<p>
 				webforyours@gmail.com
 				<br>
@@ -223,15 +224,15 @@
 			<div class="writeme">
 				<form id="contactform" method="post" action="">
 					<div class="input">
-						<label class="name" for="name">Имя</label>
+						<label id="name1" class="name" for="name">Имя</label>
 						<input type="text" id="name" name="name" placeholder="Ваше имя">
 					</div>
 					<div class="input">
-						<label class="email" for="email">E-mail</label>
+						<label id="email1" class="email" for="email">E-mail</label>
 						<input type="text" id="email" name="email" placeholder="Ваше e-mail">
 					</div>
 					<div class="input clearfix">
-						<label class="message" for="message"></label>
+						<label id="message1" class="message" for="message"></label>
 						<textarea type="text" id="message" name="message" placeholder="Ваше сообщение"></textarea>
 						<button class="submit" type="submit">Отправить</button>
 					</div>
@@ -242,5 +243,32 @@
 </div>
 <footer>
 </footer>
+<script type="text/jscript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+
+$("#name").focus(function() {
+	$("#name1").addClass('modify');
+	$("#email1").removeClass('modify');
+	$("#message1").removeClass('modify');
+});
+$("#email").focus(function() {
+	$("#email1").addClass('modify');
+	$("#name1").removeClass('modify');
+	$("#message1").removeClass('modify');
+});
+$("#message").focus(function() {
+	$("#message1").addClass('modify');
+	$("#name1").removeClass('modify');
+	$("#email1").removeClass('modify');
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+* { 
+	margin:0; 
+	padding:0;
+}
+#slider {
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+	background: url(../img/1.jpg) no-repeat;
+	cursor: pointer;
+	position: relative;
+}
+#left {
+	width: 0;
+	height: 0;
+	border: 80px solid transparent;
+	border-right-color: lightblue;
+	border-left: 0;
+	position: absolute;
+	top: 30%;
+	left: -10%;
+}
+#right {
+	width: 0;
+	height: 0;
+	border: 80px solid transparent;
+	border-left-color: lightblue;
+	border-right: 0;
+	position: absolute;
+	top: 30%;
+	right: -10%;
+}

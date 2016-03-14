@@ -1,0 +1,23 @@
+* { 
+	margin:0; 
+	padding:0;
+}
+#alarm {
+	width:150px; 
+	height:auto;
+	margin:50px auto; 
+}
+#alarm1{ 
+	font-size: 48px; 
+	color: #000;}
+#alarm2{
+	display:none;	
+	width:300px; 
+	height:auto; 
+	margin:100px auto; 
+}
+span{
+	font: bold 48px/1 'Tahoma'; 
+	color: red; 
+	text-transform: uppercase;
+}
