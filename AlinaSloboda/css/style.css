@@ -38,61 +38,6 @@ a {
 #up:hover {
 	background: rgba(0,0,0,.8);
 }
-.menu-trigger {
-    position: fixed;
-    top: 24px;
-    left: 24px;
-    display: block;
-    width: 3.75em;
-    height: 4.25em;
-    margin: 0 auto;
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    z-index: 20001;
-    font-size: 11px;
-}
-.icon {
-	border:0;
-	position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 1.5em;
-    line-height: 1em;
-    height: 2px;
-    left: 0;
-    top: 1.5em;
-	-webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    margin: 0 1.1em;
-    background: #fff;
-	-webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    margin: 0 1.1em;
-}
-.icon:after,.icon:before {
-    content: '';
-    display: block;
-    width: 1.5em;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    background: #fff;
-    -webkit-transition: -webkit-transform .4s cubic-bezier(.77,0,.175,1),left .4s cubic-bezier(.77,0,.175,1),top .4s cubic-bezier(.77,0,.175,1),bottom .4s cubic-bezier(.77,0,.175,1);
-    transition: transform .4s cubic-bezier(.77,0,.175,1),left .4s cubic-bezier(.77,0,.175,1),top .4s cubic-bezier(.77,0,.175,1),bottom .4s cubic-bezier(.77,0,.175,1);
-}
-.icon:before {
-    top: -6px;
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-}
-.icon:after {
-    bottom: -6px;
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-}
 /* HEADER */
 #header {
 	height: 100vh;
@@ -119,7 +64,7 @@ a {
 	stroke-width: 8;
 }
 .header_p {
-	font: 51px/2.5 "Josefin Sans";
+	font: 40px/2.5 "Josefin Sans";
 	color: #444;
 }
 /* MENU */
@@ -137,7 +82,7 @@ a {
 	position: relative;
 }
 .menu__link {
-	font: 51px/1.5 "Josefin Sans";
+	font: 40px/1.5 "Josefin Sans";
 	color: #444;
 	border-bottom: 3px solid rgba(19, 185, 148, 0);
 }
@@ -159,6 +104,7 @@ a {
 	z-index: 105;
 }
 .main {
+	margin: 0;
 	position: relative;
 	left: 50%;
 	width: 50%;
@@ -166,8 +112,8 @@ a {
 }
 #page2  .main {
 	font-size: 0;
-	-webkit-transition: 1s left cubic-bezier(.77,0,.175,1) 0s,1s width cubic-bezier(.77,0,.175,1) 0s;
-    transition: 1s left cubic-bezier(.77,0,.175,1) 0s,1s width cubic-bezier(.77,0,.175,1) 0s;
+	-webkit-transition:1s width cubic-bezier(.77,0,.175,1) 0s;
+    transition: 1s width cubic-bezier(.77,0,.175,1) 0s;
 }
 .grey-bg {
 	background: #444;
@@ -245,6 +191,11 @@ a {
 	opacity: 0;
 	transition: 1500ms cubic-bezier(.77,0,.175,1) all;
 }
+.more a {
+	display: block;
+	width: 120px;
+	height: 69px;
+}
 .next-container {
 	position: relative;
 	width: 100%;
@@ -258,7 +209,8 @@ a {
 .next:hover {
 	opacity: 1;
 }
-.more p, .next p {
+.more span, .next p {
+	display: block;
 	position: absolute;
 	top:50%;
 	left: 50%;
@@ -341,32 +293,32 @@ a {
 	width: 120px;
 	cursor: pointer;
 }
-#slider-container {
+#slider-container1, #slider-container2, #slider-container3 {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
-	margin: 0 auto;
+	width: 70vw;
 	overflow: hidden;
 }
 .slides {
 	position: relative;
+	width: 100%;
 	height: 100%;
 }
 .slides>li {
 	display: block;
 	float: left;
-	width: 100vw;
 	height: 100vh;
+	background: #444;
 }
 .slides>li>img {
 	display: block;
-	width: 100%;
+	margin: 0 auto;
+	width: auto;
     height: 100%;
 	vertical-align: middle;
 	text-align: center;
 	z-index: 1000;
 }
-#left, #right {
+.left, .right {
 	width: 24px;
 	height: 54px;
 	background: url(../img/works/sprite-nav.png);
@@ -375,19 +327,91 @@ a {
     margin-top: -27px;
 	cursor: pointer;
 }
-#left {
+.left {
 	background-position: 0 0;
-	left: 1%;
+	left: 44px;
 }
-#left:hover {
+.left:hover {
 	background-position: -25px 0;
 }
-#right {
+.right {
 	background-position: -76px 0;
-	right: 31.5%;
+	right: 59px;
 }
-#right:hover {
+.right:hover {
 	background-position: -50px 0;
+}
+#send {
+	width: 74px;
+	height: 53px;
+	background: url(../img/elements/mail1.svg) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	animation: rotation 4s linear infinite;
+}
+@keyframes rotation {
+	0% {
+		transform: scale(1);	
+		}
+	15% {
+		transform: scale(1.2);
+	}
+	30% {
+		transform: scale(1);
+}
+}
+.tosend {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+.tosend img {
+	margin: 7px 0 0 20px;
+	height: 40px;
+}
+.tosend p {
+	display: block;
+	margin: 0 0 0 -30px;
+	font: 22px/1 'MrsWhite';
+    color: #fff;
+}
+.text-contact {
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text-contact p {
+	font: 20px/1.3 "Josefin Sans";
+    color: #444;
+	text-align: justify;
+}
+.text-contact h4 {
+	margin: 30px 0 0 0;
+	font: 30px/1.3 'MrsWhite';
+    color: #fff;
+}
+.text-contact h6 {
+	font: 24px/1 "Josefin Sans";
+    color: #fff;
+}
+.soc {
+	display: block;
+	list-style: none;
+	position: absolute;
+	bottom: 10%;
+	left: 15%;
+}
+.soc li {
+	float: left;
+	margin: 0 10px;
+}
+.soc li:first-child {
+	margin-left: 0;
+}
+.soc img {
+	width: 40px;
 }
 /* FORM */
 .clearfix:before, .clearfix:after{
@@ -397,17 +421,6 @@ a {
     visibility: hidden;
     width: 0;
     height: 0;
-}
-#send {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	width: 74px;
-	height: 53px;
-	background: url(../img/elements/mail1.svg) no-repeat;
-	background-size: 100%;
-	cursor: pointer;
-	animation: rotation 4s linear infinite;
 }
 #wrap {
 	position: fixed;
@@ -531,22 +544,6 @@ input[type="text"] {
     text-shadow: none;
 	cursor: pointer;
 }
-@keyframes rotation {
-	0% {
-		transform: scale(1);	
-		}
-	15% {
-		transform: scale(1.2);
-	}
-	30% {
-		transform: scale(1);
-}
-footer {
-	clear: both;
-	width: 100%;
-	height: 300px;
-	background: #fff;
-}
 }
 @media screen and (max-width: 1150px) {
 	.header_p {
@@ -609,9 +606,15 @@ footer {
 		width: 100px;
 		height: auto;
 	}
-	#send  {
+	.tosend  {
 		top: 0;
-		margin-top: 100px;
+		margin-top: 65px;
+	}
+	.text-contact {
+		top: 57%;
+	}
+	.soc {
+		bottom: 5%;
 	}
 	.side .main-nav {
 		display: none;
@@ -625,14 +628,23 @@ footer {
 	.more svg, .close svg, .next svg{
 		width: 85px;
 	}
-	.more p, .close p, .next p{ 
+	.more span, .close p, .next p{ 
 		font-size: 22px;
 	}
 	.close  p { 
 		font-size: 55px;
 	}
-	#right {
-		right: 3.5%;
+	#slider-container1, #slider-container2, #slider-container3 {
+	width: 100vw;
+	}
+	.slides>li {
+		height: 100vw;
+	}
+	.left {
+		left: 10px;
+	}
+	.right {
+		right: 25px;
 	}
 }
 @media screen and (max-width: 450px) {
