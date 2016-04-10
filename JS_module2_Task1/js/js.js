@@ -1,11 +1,20 @@
-﻿var a=prompt('Введите число');
-var b=prompt('Введите степень, в которую нужно возвести число');
-alert(myPow (a, b));
+﻿var a=+prompt('Введите число');
+var b=+prompt('Введите степень, в которую нужно возвести число');
+console.log(myPow (a, b));
 
 function myPow(a, b) {
-	var result = 1;
-	for(var i = 0; i < b; i++) {
-		result *= a;
+	if (b>0) {
+		Power(a, b);
 	}
-	return(result);
+	else {
+	    return (1/Power(a, -b))
+	}
 }
+
+ function Power(a, b) {
+	  var result = 1;
+	  for(var i = 0; i < b; i++) {
+		result *= a;
+	  }
+	  return(result);
+	}
