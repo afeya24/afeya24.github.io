@@ -9,16 +9,13 @@
     margin-right: auto;
     margin-top: 50px;
 }
-
 .tabs__paragraph{
 	padding-top:10px;
 }
-
 .tabs__menu{
 	margin:0px;
 	padding:0px;
 }
-
 .tabs__menu:after{
 	content:"";
 	display:block;
@@ -26,32 +23,32 @@
 	height:1px;
 	background: grey;
 }
-
 .tabs__item{
-	margin:0px 5px 0px 0px;
-	padding:0px;
+	margin:0 5px 0 0;
+	padding:0;
 	cursor:pointer;
 	display:block;
 	float:left;
 	padding:10px 15px;
-	background:#e9eaeb;
+	background: #d7f7d1;
 	color:#707070;
     border: 1px solid #d6d6d7;
     border-radius: 7px 7px 0 0;
 }
-
 .tabs__item.active, .tabs__item.active:hover{
 	background:white;
 	color:black;
-    border-color: grey;
+    border-color: grey;	
 }
-
 .tabs__item:hover{
     color: black;
-	background:#d6d6d7;
+	background:#d7f7d1;
     border: 1px solid grey;
 }
-
-.none{
-    display: none;
+.tabs__content {
+	display: none;
+	border-bottom: 0;
+}
+.active {
+    display: block;
 }
