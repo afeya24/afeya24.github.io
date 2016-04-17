@@ -1,0 +1,55 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #def7da;
+}
+form {
+	width: 500px;
+	margin: 100px 200px;
+}
+label {
+	vertical-align: top;
+	width: 75px;
+    display: inline-block;
+}
+label, input {
+	font-size: 16px;
+}
+input {
+	padding: 0 2px;
+}
+.input {
+	margin: 15px 0;
+}
+.input:after {
+	padding: 2px 5px;
+	margin: 0 10px;
+	border: 1px solid #000;
+	box-shadow: 0 0 1px #000;
+	font-size: 14px;
+	background: #fff;
+}
+.none:after {
+	opacity:0;
+}
+.block:after {
+	opacity: 1;
+}
+.firstname:after {
+	content: "Please provide your firstname";
+}
+.lastname:after {
+	content: "Please provide your lastname";
+}
+.address:after {
+	content: "Your home or work address";
+}
+button {
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	line-height: 1.5;
+	margin: 0 0 0 110px;
+}
