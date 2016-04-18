@@ -409,17 +409,25 @@ section {
 	border-bottom: 1px solid #eaeaea;
 	}
 	.nav-bar ul {
+	max-width: 960px;
+	margin: 0 auto;
     position: static;
     top: 0;
     left: 0;
     transform: translate(0, 0);
 	}
-	.nav-bar ul li {
-	width: 257px;
-    margin-bottom: 0;
+	.nav-bar ul li:nth-child(2) {
 	display: inline-block;
-	margin-right: 30px;
+	margin: 0 auto;
 }
+	.nav-bar ul li:first-child {
+		float: left;
+		margin: 0 20px;
+	}
+	.nav-bar ul li:last-child {
+		float: right;
+		margin: 0 20px;
+	}
 	.content {
 	border-left: 0;
 	margin-left: 0;
@@ -429,11 +437,20 @@ section {
 	}
 }
 @media screen and (max-width: 984px) {
-	.nav-bar ul li {
-		margin-right: -15px;
+	.nav-bar ul {
+	max-width: 760px;
+	}
+	.nav-bar ul li a h3{
+		font-size: 15px;
+	}
+	.nav-bar ul li a span{
+		font-size: 9px;
 	}
 	.container, .container1 {
 		width: 620px;
+	}
+	.text {
+    width: 620px;
 	}
 	.two-thirds {
     display: block;
