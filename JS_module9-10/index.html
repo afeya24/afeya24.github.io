@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.selectbox.css">
+<link rel="stylesheet" href="css/fm.checkator.jquery.css">
+<link rel="stylesheet" href="css/css-checkbox.css">
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"
+						integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+						crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/jcarousel.transitions.js"></script>
+<script type="text/javascript" src="js/select-initial.js"></script>
+<script type="text/javascript" src="js/fm.checkator.jquery.js"></script>
+<script type="text/javascript" src="js/checkbox.jquery.js"></script>
+<script src="js/script.js"></script>
+<title>JS</title>
+</head>
+<body>
+<nav>
+	<ul class="content clearfix">
+		<li><a href="#">Nav 1</a></li>
+		<li><a href="#">Nav 2</a></li>
+		<li class="dropdown">
+			<a href="#">Nav 3</a>
+			<ul class="sub-menu">
+				<li><a href="#">Nav 3.1</a></li>
+				<li><a href="#">Nav 3.2</a></li>
+				<li><a href="#">Nav 3.3</a></li>
+				<li class="dropdown">
+					<a href="#">Nav 3.4</a>
+					<ul class="sub-menu">
+						<li><a href="#">Nav 3.4.1</a></li>
+						<li class="dropdown">
+							<a href="#">Nav 3.4.2</a>
+							<ul class="sub-menu">
+								<li><a href="#">Nav 3.4.2.1</a></li>
+								<li><a href="#">Nav 3.4.2.2</a></li>
+								<li><a href="#">Nav 3.4.2.3</a></li>
+								<li><a href="#">Nav 3.4.2.4</a></li>
+								<li><a href="#">Nav 3.4.2.5</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Nav 3.4.3</a></li>
+						<li><a href="#">Nav 3.4.4</a></li>
+						<li><a href="#">Nav 3.4.5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 3.5</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Nav 4</a></li>
+		<li><a href="#">Nav 5</a></li>
+	</ul>
+</nav>
+<div class="jcarousel-wrapper">
+	<div class="jcarousel">
+		<ul>
+			<li><img src="img/1.jpg" alt="img1"></li>
+			<li><img src="img/2.jpg" alt="img2"></li>
+			<li><img src="img/3.jpg" alt="img3"></li>
+			<li><img src="img/4.jpg" alt="img4"></li>
+			<li><img src="img/5.jpg" alt="img5"></li>
+			<li><img src="img/6.jpg" alt="img6"></li>
+		</ul>
+	</div>
+
+	<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+				
+	<p class="jcarousel-pagination"></p>
+</div>
+<div class="select-title">
+	<p>Custom Select</p>
+</div>
+<select name="country_id" id="country_id" tabindex="1">
+	<option value="">-- Select country --</option>
+	<optgroup label="North America">
+		<option value="1">USA</option>
+		<option value="9">Canada</option>
+	</optgroup>
+	<optgroup label="Europe">
+		<option value="2">France</option>
+		<option value="3">Spain</option>
+		<option value="6">Bulgaria</option>
+		<option value="7" disabled="disabled">Greece</option>
+		<option value="8">Italy</option>
+	</optgroup>
+	<optgroup label="Asia" disabled="disabled">
+		<option value="5">Japan</option>
+		<option value="11">China</option>
+	</optgroup>
+	<option value="4">Brazil</option>
+	<option value="10">South Africa</option>
+</select>
+<div class="wrapper-checkbox">
+	<h2>jQuery Checkboxes</h2>
+	<input type="checkbox" name="checkbox2_1" class="checkbox2" id="checkbox2_1">
+	<label for="checkbox2_1">Choice 1</label>
+	<br>
+	<input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2">
+	<label for="checkbox2_2">Choice 2</label>
+	<br>
+	<input type="checkbox" name="checkbox2_3" class="checkbox2" id="checkbox2_3">
+	<label for="checkbox2_3">Choice 3</label>
+	<br>
+	<input type="checkbox" name="checkbox2_4" class="checkbox2" id="checkbox2_4">
+	<label for="checkbox2_4">Choice 4</label>
+	<br>
+	<input value="destroy checkator" id="activate_checkator4" type="button">
+	<br>
+</div>
+<div class="select-title">
+	<p>CSS Checkboxes</p>
+</div>
+<div class="boxes">
+	<input type="checkbox" id="box-1">
+	<label for="box-1">Check 1</label>
+
+	<input type="checkbox" id="box-2" checked>
+	<label for="box-2">Check 2</label>
+
+	<input type="checkbox" id="box-3">
+	<label for="box-3">Check 3</label>
+<script src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.color.js"></script>
+<script src="js/script.js"></script>
+</div>
+</body>
+</html>
