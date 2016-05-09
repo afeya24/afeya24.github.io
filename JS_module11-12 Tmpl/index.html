@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"
+						integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+						crossorigin="anonymous"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+<title>JS</title>
+</head>
+<body>
+
+<script type="text/template" id="test">
+
+  <div class="container-boss">
+    <div class="block">
+      <h3><%= data[0].profileName %></h3>
+      <img src="<%= data[0].profileImg %>" alt="<%=data[0].profileName %>">
+      <p><%= data[0].profileText %></p>
+    </div>
+    <div class="line"> </div>
+    <div class="block">
+      <p><%= data[0].profileFrontQuestion %></p>
+      <ul>
+        <%  for (var i = 0; i < data[0].profileFrontAnswer.length; i++) { %>
+        <li><%= data[0].profileFrontAnswer[i] %></li>
+        <%  };  %>
+      </ul>
+    </div>
+    <div class="line"> </div>
+    <div class="block">
+      <p><%= data[0].profilePhoneTitle %></p>
+      <p><%= data[0].profilePhone %></p>
+      <div class="block2">
+        <p><%= data[0].profileVkTitle %></p>
+        <p><a href="<%=data[0].profileVk %>">vk.com</a></p>
+      </div>
+    </div>
+    <div class="line"> </div>
+    <div class="block">
+      <p><%= data[0].profileFeedbackTitle %></p>
+      <p><%= data[0].profileFeedback %></p>
+    </div>
+  </div>
+
+</script>
+
+</body>
+</html>
