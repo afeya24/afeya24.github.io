@@ -1,0 +1,77 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Open Sans";
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot');
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'),
+  url('../fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype');
+}
+
+.wrapper-search {
+  text-align: center;
+  margin-top: 200px;
+}
+.logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100%;
+}
+
+form {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.search {
+  width: 190px;
+  height: 25px;
+  padding: 0 5px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  line-height: 27px;
+  border: 0;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+}
+
+.wrapperTop {
+  padding: 10px 20px;
+  margin:0;
+  text-align: left;
+  background: #f2f2f2;
+}
+
+.logoTop {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  margin-right: 5px;
+}
+.wrapperTop button {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.mySearchResult {
+  padding: 10px 0 0 20px;
+}
+
+
