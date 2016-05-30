@@ -1,0 +1,11 @@
+/* Код для подключения шрифта в /css/stylename.css */
+/* font-family: "UbuntuCondensedRegular"; */
+@font-face {
+    font-family: "Ubuntu Condensed Regular";
+    src: url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.eot");
+    src: url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.woff") format("woff"),
+    url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
