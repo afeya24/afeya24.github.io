@@ -12,6 +12,17 @@ a {
 ul {
 	list-style: none;
 }
+
+img {
+	border: none;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
 @font-face {
     font-family: 'League Gothic';
     src: url('../fonts/league-gothic/league-gothic.regular-webfont.eot');
@@ -62,7 +73,7 @@ header {
 	float: left;
 	margin: 0 38px 0 0; 
 	padding: 0 5px 0 7px;
-	border-bottom: 2px solid rgba(237, 191, 255, 0);
+	border-bottom: 2px solid transparent;
 }
 .mod_menu__item {
 	margin-right: 0;
@@ -73,7 +84,7 @@ header {
 	margin: -4px 43px 0 0;
 }
 .menu__item:hover {
-	border-bottom: 2px solid rgba(237, 191, 255, 1);
+	border-bottom: 2px solid #EDBFFF;
 }
 .menu__link {
 	font: 24px/1 'League Gothic';
@@ -143,7 +154,7 @@ header {
     border-bottom: 2px solid rgba(237, 191, 255, 1);
 }
 article {
-	display: inline-block;
+	float: left;
 	width: 505px;
 	height: auto;
 	vertical-align: top;
@@ -304,9 +315,20 @@ article {
 .line-article {
 	width: 100%;
 	height: 340px;
-	background-image: linear-gradient(to bottom, #745083, #322539);
+	background: #745083;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#745083', endColorstr='#322539');
+	background-image: -weblit-linear-gradient(to bottom, #745083, #322539);
+	background-image: -moz-linear-gradient(to bottom, #745083, #322539);
+	background-image: -o-linear-gradient(to bottom, #745083, #322539);
+	background-image: -ms-linear-gradient(to bottom, #745083, #322539);
+	background-image:  linear-gradient(to bottom, #745083, #322539);
 	border-top: 1px solid #33253a;
 	border-bottom:	1px ridge #0d151b;
+}
+
+.line-article article {
+	margin-right: 88px;
+	margin-left: 20px;
 }
 .line2-article {
 	width: 100%;
@@ -314,15 +336,16 @@ article {
 	background: #ececec;
 }
 .read_more {
-	display: block;
+	float: right;
 	margin: 13px 8px 0 0;
-	text-align: right;
 	font: 18px/1 'League Gothic';
 	color: #fff;
 	text-transform: uppercase;
 }
 .mod_read:hover {
-text-shadow: 0 0 8px #b7b0ba;
+	text-shadow: 0 0 8px #b7b0ba;
+	height: 1em;
+	filter: Shadow(Color=#b7b0ba, Direction=20, Strength=8);
 }
 .mod2_read {
 	color: #454545;
@@ -375,7 +398,7 @@ text-shadow: 0 0 8px #b7b0ba;
 	background-position: -697px 0;
 }
 .news_people {
-	display: inline-block;
+	float: left;
 	position: relative;
 	margin: 100px 0 113px 0;
 	width: 352px;
@@ -403,7 +426,7 @@ text-shadow: 0 0 8px #b7b0ba;
 	top: 15px;
 }
 .news_list {
-	display: inline-block;
+	float: right;
 	position: relative;
 	width: 440px;
 	height: auto;
@@ -449,6 +472,12 @@ text-shadow: 0 0 8px #b7b0ba;
 	height: 13px;
 	margin-left: -2px;
 	padding: 2px;
+	background: #8a8a8a;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a8a', endColorstr='#464646');
+	background-image: -weblit-linear-gradient(to bottom, #8a8a8a, #464646);
+	background-image: -moz-linear-gradient(to bottom, #8a8a8a, #464646);
+	background-image: -o-linear-gradient(to bottom, #8a8a8a, #464646);
+	background-image: -ms-linear-gradient(to bottom, #8a8a8a, #464646);
 	background-image: linear-gradient(to bottom, #8a8a8a, #464646);
 	border-radius: 50%;
 	border: 2px solid #f0f0f0;
@@ -765,10 +794,10 @@ article {
     height: 170px;
 }
 .news_list {
-    display: block;
+	display: block;
 	margin: 90px  0 87px 70px;
 }
-.mod3_p {
+.mod3_p {b7b0ba
     height: 25px;
 }
 .news_list__item {
@@ -901,3 +930,7 @@ article {
 .designed {
     margin-top: -46px;
 }
+
+
+
+
