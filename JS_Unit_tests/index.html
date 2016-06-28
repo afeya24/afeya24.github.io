@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"
+					integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+					crossorigin="anonymous"></script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+<title>JS</title>
+</head>
+<body>
+
+<script type="text/template" id="test">
+
+<div class="container-boss">
+
+  <h1><%= data.testHeading %></h1>
+
+  <div class="container-questions">
+    <ol>
+      <% for(var i = 0; i < data.testArray.length; i++) { %>
+      <li><p><%= data.testArray[i].question %></p>
+
+        <ul>
+          <% for(var x = 0; x < data.testArray[i].answers.length; x++) { %>
+          <li>
+            <label>
+              <input class="answer" type="radio"  name="<%= 'question' + (i+1) %>" value="<%= (x+1) %>">
+              <%= data.testArray[i].answers[x] %>
+            </label>
+          </li>
+          <% } %>
+        </ul>
+
+      </li>
+      <% } %>
+    </ol>
+  </div>
+
+  <button id="Btn"><%= data.testBtn %></button>
+</div>
+
+</script>
+</body>
+</html>
